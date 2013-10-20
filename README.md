@@ -1,4 +1,14 @@
 bench.h
 =======
 
-bench code_paths using clock_gettime
+get wall and cpu time for benchmarking
+
+## install
+```
+clib install deepak1556/bench.h
+```
+
+## example
+```
+make test
+```
