@@ -1,0 +1,10 @@
+{
+  "name": "bench.h",
+  "version": "0.0.1",
+  "repo": "deepak1556/bench.h",
+  "description": "get wall and cpu time for benchmarking",
+  "keywords": ["bench"],
+  "license": "MIT",
+  "src": ["bench.h"]
+}
+
