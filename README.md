@@ -5,7 +5,7 @@ get wall and cpu time for benchmarking
 
 ## install
 ```
-clib install deepak1556/bench.h
+clib install clibs/bench.h
 ```
 
 ## example
