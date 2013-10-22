@@ -1,3 +1,7 @@
+
+#ifdef BENCH
+#define BENCH
+
 #include <time.h>
 
 #ifdef CLOCK_MONOTONIC_RAW
@@ -17,3 +21,5 @@ static float cpu() {
   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &tp);
   return tp.tv_sec + 1e-9 * tp.tv_nsec;
 }
+
+#endif
