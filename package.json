@@ -1,7 +1,7 @@
 {
-  "name": "bench.h",
+  "name": "bench",
   "version": "0.0.1",
-  "repo": "deepak1556/bench.h",
+  "repo": "clibs/bench",
   "description": "get wall and cpu time for benchmarking",
   "keywords": ["bench"],
   "license": "MIT",
