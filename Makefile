@@ -1,11 +1,10 @@
-
 CC ?= gcc
 OS = $(shell uname)
 CFLAGS = -std=c99 -Wall -Wextra
 LDFLAGS =
 
 ifneq ($(OS), Darwin)
-	LDFLAGS += ltr
+	LDFLAGS += -lrt
 endif
 
 all: clean test
@@ -18,6 +17,6 @@ test: test.o
 	./bench
 
 %.o: %.c
-	$(CC) $< -c -o $@ $(CFLAGS)
+	$(CC) $< -c -o $@ $(CFLAGS) $(LDFLAGS)
 
 .PHONY: all clean test
