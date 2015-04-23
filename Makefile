@@ -1,6 +1,6 @@
 CC ?= gcc
 OS = $(shell uname)
-CFLAGS = -std=c99 -Wall -Wextra
+CFLAGS = -O3 -std=c99 -Wall -Wextra
 LDFLAGS =
 
 ifneq ($(OS), Darwin)

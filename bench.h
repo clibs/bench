@@ -38,7 +38,12 @@ cpu(void) {
 
 #else
 
+#ifdef __linux__
+#include <linux/time.h>
+#else
 #include <time.h>
+#endif
+
 
 #ifdef CLOCK_MONOTONIC_RAW
 #  define CLOCK_SUITABLE CLOCK_MONOTONIC_RAW
